@@ -160,12 +160,19 @@
 						{
 							"key": "note",
 							"value": "some text2",
-							"type": "text"
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "note_name",
+							"value": "my_note",
+							"type": "text",
+							"disabled": true
 						}
 					]
 				},
 				"url": {
-					"raw": "localhost:8000/notes/my_note",
+					"raw": "localhost:8000/notes/my_note?[some text2]",
 					"host": [
 						"localhost"
 					],
@@ -173,6 +180,12 @@
 					"path": [
 						"notes",
 						"my_note"
+					],
+					"query": [
+						{
+							"key": "[some text2]",
+							"value": null
+						}
 					]
 				}
 			},
